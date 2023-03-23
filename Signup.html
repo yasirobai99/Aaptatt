@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Website-LJshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-auto">
+        <div class="container-fluid ms-2 me-2">
+            <a href="index.html" class="navbar-brand"><span class="text-white">Aaptatt Online Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <input type="search" class="ps-3" placeholder="Search" style="width:300px;">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Show Catergories</a>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">Electronics</h6></li>
+                            <li><a href="" class="dropdown-item">Mobiles, Computers</a></li>
+                            <li><a href="" class="dropdown-item">TV, Appliances, Electronics</a></li>
+                            <li><h6 class="dropdown-header">Clothing</h6></li>
+                            <li><a href="" class="dropdown-item">Men's Fashion</a></li>
+                            <li><a href="" class="dropdown-item">Women's Fashion</a></li>
+                            <li><h6 class="dropdown-header">Other</h6></li>
+                            <li><a href="" class="dropdown-item">Beauty, Health, Grocery</a></li>
+                            <li><a href="" class="dropdown-item">Sports, Fitness</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admin.html" class="nav-link">Admin</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="Signup.html" class="nav-link">
+                            <img src="images/user.svg" alt="" class="image-header" width="20" height="20"> <span class="p-1">Sign Up</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Cart.html" class="nav-link">
+                            <img src="images/cart.svg" alt="" class="image-header" width="20" height="20"> <span class="p-1">My Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Form -->
+    <div class="container border m-5 p-5 mx-auto row">
+        <div class="ps-5 mx-auto col-sm-7">
+            <p class="p-3" style="font-size: 2em; font-weight: bold;">Sign Up</p>
+            <form>
+                <div class="p-3">
+                    <input type="text" placeholder="Enter First Name:" style="width: 300px;" />
+                </div>
+                <div class="p-3">
+                    <input type="text" placeholder="Enter Last Name" style="width: 300px;" />
+                </div>
+                <div class="p-3">
+                    <input type="email" placeholder="Enter Email Address" style="width: 300px;"/>
+                </div>
+                <div class="p-3">
+                    <input type="password" placeholder="Enter Password" style="width: 300px;"/>
+                </div>
+                <div class="p-3">
+                    <input type="password" placeholder="Confirm Password" style="width: 300px;"/>
+                </div>
+                <div class="p-3">
+                    <input class="btn btn-primary" type="button" value="Submit" style="width: 300px;"/>
+                </div>
+             </form>
+        </div>
+        <div class="col-sm-4">
+            <div class="p-5 m-5 ms-0 me-0 ps-3">
+                <p class="p-4 ps-0 text-primary" style="font-size: 25px; font-weight: bold;">Aaptatt Online Store</p>
+                <div class="cartanimated"><img class="ms-3" src="images/signupcart.jpg" alt="" height="50" width="50"></div>
+                <p class="p-4 ps-0"><i><strong>Continue Your Shoping...</strong></i></p>
+                <button class="btn btn-primary" style="width: 200px;">
+                    <a class="text-white href="#" style="text-decoration: none;">Log In</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-fluid bg-dark pt-5">
+        <!-- Details Footer -->
+        <div class="container row mx-auto pb-4" style="font-size: 14px;">
+            <div class="col-sm text-light">
+                <p><strong>Contact Us</strong></p>
+                <pre>Aaptatt
+No. 128 Freedom, India,1111
+United States</pre>
+                <p>+91-9999888898</p>
+                <p>Aaptatt@gmail.com</p>
+                <a class="fa fa-facebook p-1" style="text-decoration: none; color: skyblue;"></a>
+                <a class="fa fa-twitter p-1" style="text-decoration: none;"></a>
+                <a class="fa fa-instagram p-1" style="text-decoration: none; color: rgb(209, 0, 105);"></a>
+                <a class="fa fa-youtube p-1 text-danger" style="text-decoration: none;"></a>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Information</strong></p>
+                <p>Privacy Policy</p>
+                <p>Refund Policy</p>
+                <p>Shipping Policy</p>
+                <p>Terms of Service</p>
+                <p>Blogs</p>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Account</strong></p>
+                <p>Search</p>
+                <p>About us</p>
+                <p>FAQS</p>
+                <p>Contact</p>
+                <p>Size Chart</p>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Quick Links</strong></p>
+                <p>Accessories</p>
+                <p>Laptops</p>
+                <p>Headphones</p>
+                <p>Smart Watches</p>
+                <p>Tablets</p>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Our App</strong></p>
+                <p>Download our App and get extra 15% Discount on your First Order</p>
+                <div class="btn btn-light btn" style="width: 150px;">
+                    <p class="mb-0 mt-0" style="font-size: 12px;">Download on the</p>
+                    <p class="mt-0 mb-0"><strong>App Store</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container text-light p-3 ps-5 pb-4" style="font-size: 14px;">
+            @2023. Powered by <span class="text-warning">Yasir Obaibullah</span>.
+        </div>
+    </div>
+</body>
+
+</html>

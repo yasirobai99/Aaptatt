@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Website-LJshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-auto">
+        <div class="container-fluid ms-2 me-2">
+            <a href="index.html" class="navbar-brand"><span class="text-white">Aaptatt Online Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <input type="search" class="ps-3" placeholder="Search" style="width:300px;">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Show Catergories</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6 class="dropdown-header">Electronics</h6>
+                            </li>
+                            <li><a href="#catergories" class="dropdown-item">Mobiles, Computers</a></li>
+                            <li><a href="#catergories" class="dropdown-item">TV, Appliances, Electronics</a></li>
+                            <li>
+                                <h6 class="dropdown-header">Clothing</h6>
+                            </li>
+                            <li><a href="#catergories" class="dropdown-item">Men's Fashion</a></li>
+                            <li><a href="#catergories" class="dropdown-item">Women's Fashion</a></li>
+                            <li>
+                                <h6 class="dropdown-header">Other</h6>
+                            </li>
+                            <li><a href="#catergories" class="dropdown-item">Beauty, Health, Grocery</a></li>
+                            <li><a href="#catergories" class="dropdown-item">Sports, Fitness</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admin.html" class="nav-link">Admin</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="Signup.html" class="nav-link">
+                            <img src="images/user.svg" alt="" class="image-header" width="20" height="20"> <span
+                                class="p-1">Sign Up</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Cart.html" class="nav-link">
+                            <img src="images/cart.svg" alt="" class="image-header" width="20" height="20"> <span
+                                class="p-1">My Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FOLDER DETAILS -->
+    <div class="container m-3 p-3 mx-auto text-center">
+        <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a> / Your Shopping Cart
+    </div>
+
+    <!-- CART BODY -->
+    <div class="main-body pt-4 pb-5" style="background-color: rgb(206, 206, 206);">
+        <div class="container row mx-auto pt-4 pb-4">
+            <div class="col-sm">
+                <p class="m-2 p-1" style="font-size: 13px;"><strong>PRODUCT</strong></p>
+                <hr>
+                <img src="images/iphone.png" alt="" width="75px" class="float-start m-2 p-1">
+                <div class="m-2">
+                    <p class="mb-0" style="font-size: 14px;">I phone13</p>
+                    <p class="mt-0 mb-0" style="font-size: 14px;">Rom : 64gb</p>
+                    <p class="mt-0" style="font-size: 14px;">Color : #AB00XE</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <p class="m-2 p-1" style="font-size: 13px;"><strong>PRICE</strong></p>
+                <hr>
+                <div class="m-2 p-1 mt-4">
+                    <p class="mb-0" style="font-size: 14px;"><strong>$100</strong></p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <p class="m-2 p-1" style="font-size: 13px;"><strong>QUANTITY</strong></p>
+                <hr>
+                <div class="m-2 p-1 mt-4">
+                    <input type="number" name="" id="quantity" style="width: 75px;" onchange="mychange()">
+                </div>
+            </div>
+            <div class="col-sm">
+                <p class="m-2 p-1" style="font-size: 13px;"><strong>TOTAL</strong></p>
+                <hr>
+                <div class="m-2 p-1 mt-4">
+                    <strong>$</strong><span id="total" class="mb-0" style="font-size: 14px; font-weight: bold;"></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container pt-4 pb-4">
+            <a href="index.html"><button class="btn btn-primary">Continue Shopping</button></a>
+            <p style="font-size: 12px;" class="mt-3">Order Specific Instructions</p>
+        </div>
+        <div class="container pt-4 pb-4 d-flex flex-row-reverse">
+            <div>
+                <p class="mt-3">Subtotal : <strong>$ <span id="stotal"></span> </strong></p>
+                <p style="font-size: 12px;" class="mt-3">Taxes and Shipping calculated at checkout</p>
+                <a href="#"><button class="btn btn-dark btn-sm" style="width:225px;" onclick="checkoutmsg()">Check Out</button></a>
+            </div>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        q1 = document.getElementById('quantity').value;
+        function mychange() {
+            var x = document.getElementById("quantity").value;
+            document.getElementById("total").innerHTML = x*100;
+            document.getElementById("stotal").innerHTML = x*100;
+        }
+
+        function checkoutmsg(){
+            alert("Thank you for shoping with us, have a good day!");
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <div class="container-fluid bg-dark">
+        <!-- Search -->
+        <div class="container-fluid p-5 row mx-auto">
+            <div class="col-sm m-3">
+                <img src="images/newsletter.png" alt="" class="float-start me-3">
+                <h3 class="text-light">Sign Up For Newsletter</h3>
+            </div>
+            <div class="col-sm m-3">
+                <input type="search" placeholder="Your Email" class="p-1 ps-3 text-dark" style="width: 400px;">
+            </div>
+        </div>
+
+        <!-- Details Footer -->
+        <div class="container row mx-auto pb-4" style="font-size: 14px;">
+            <div class="col-sm text-light">
+                <p><strong>Contact Us</strong></p>
+                <pre>Aaptatt
+No. 128 Freedom, India,1111
+United States</pre>
+                <p>+91-9999888898</p>
+                <p>Aaptatt@gmail.com</p>
+                <a class="fa fa-facebook p-1" style="text-decoration: none; color: skyblue;"></a>
+                <a class="fa fa-twitter p-1" style="text-decoration: none;"></a>
+                <a class="fa fa-instagram p-1" style="text-decoration: none; color: rgb(209, 0, 105);"></a>
+                <a class="fa fa-youtube p-1 text-danger" style="text-decoration: none;"></a>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Information</strong></p>
+                <p>Privacy Policy</p>
+                <p>Refund Policy</p>
+                <p>Shipping Policy</p>
+                <p>Terms of Service</p>
+                <p>Blogs</p>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Account</strong></p>
+                <p>Search</p>
+                <p>About us</p>
+                <p>FAQS</p>
+                <p>Contact</p>
+                <p>Size Chart</p>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Quick Links</strong></p>
+                <p>Accessories</p>
+                <p>Laptops</p>
+                <p>Headphones</p>
+                <p>Smart Watches</p>
+                <p>Tablets</p>
+            </div>
+            <div class="col-sm text-light">
+                <p><strong>Our App</strong></p>
+                <p>Download our App and get extra 15% Discount on your First Order</p>
+                <div class="btn btn-light btn" style="width: 150px;">
+                    <p class="mb-0 mt-0" style="font-size: 12px;">Download on the</p>
+                    <p class="mt-0 mb-0"><strong>App Store</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container text-light p-3 ps-5 pb-4" style="font-size: 14px;">
+            @2023. Powered by <span class="text-warning">Yasir Obaibullah</span>.
+        </div>
+    </div>
+</body>
+
+</html>

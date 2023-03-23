@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-header {
+    width: 25px;
+}
+
+.image-relative {
+    position: relative;
+}
+
+.text-absolute1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.text-absolute2 {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.hoverproduct:hover{
+    border: 1px solid black;
+    background-color: rgb(227, 227, 227);
+}
+.hovercat:hover{
+    border: 1px solid black;
+}
+.hoverproductfull:hover{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    transform: scale(1.05,1.05);
+}
+.hoverproductfull{
+    border: 1px solid rgb(120, 120, 120);
+}
+
+.boxanimation1 {
+    position: relative;
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animation1 {   
+    0%   {left:0px; top:0px;}
+    25%  {left:265px; top:0px;}
+    50%  {left:265px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+.boxanimation2 {
+    position: relative;
+    animation-name: animation2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animation2 {
+    0%   {left:0px; top:0px;}
+    25%  {left:0; top:200px;}
+    50%  {left:-265px; top:200px;}
+    75%  {left:-265px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+.boxanimation3 {
+    position: relative;
+    animation-name: animation3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animation3 {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:-200px;}
+    50%  {left:265px; top:-200px;}
+    75%  {left:265px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+
+.boxanimation4 {
+    position: relative;
+    animation-name: animation4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animation4 {
+    0%   {left:0px; top:0px;}
+    25%  {left:-265px; top:0px;}
+    50%  {left:-265px; top:-200px;}
+    75%  {left:0px; top:-200px;}
+    100% {left:0px; top:0px;}
+  }
+
+  .cartanimated{
+    position: relative;
+    animation-name: cart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes cart {
+    0% {left: 0px; top: 0px;}
+    100% {left: 100px; top: 0px;}
+  }
